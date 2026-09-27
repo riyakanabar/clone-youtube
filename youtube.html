@@ -11,12 +11,13 @@
                 margin-top: 0;
                 margin-bottom: 0;
             }
-            .video-preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
+            .video-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 40px;
             }
+
             .video-title{
                 margin-top: 0px;
                 font-size: 14px;
@@ -32,8 +33,7 @@
                 margin-bottom: 4px;
             }
             .thumbnail{
-                width: 300px;
-                display: block;
+                width: 100%;
             }
             .thumbnail-row{
                 margin-bottom: 12px;
@@ -43,69 +43,113 @@
                 margin-left: 20px;
                 display: block;
             }
-            .channel-picture{
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
+            .video-info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
             }
             .profile-picture{
                 width: 40px;
                 border-radius: 50px;
             }
-            .video-info{
-                display: inline-block;
-                width: 240px;
-            }
+
         </style>
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">These are the best AI Tools in 2026</p>
-                    <p class="video-author">Dan Martell</p>
-                    <p class="video-stats">205k &#183; 3 days ago</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-pictures/channel-2.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Introducing Meta VR Glasses | Spring 2027</p>
-                    <p class="video-author">Meta VR</p>
-                    <p class="video-stats">622k &#183; 3 days ago</p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">These are the best AI Tools in 2026</p>
+                        <p class="video-author">Dan Martell</p>
+                        <p class="video-stats">205k &#183; 3 days ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Introducing Meta VR Glasses | Spring 2027</p>
+                        <p class="video-author">Meta VR</p>
+                        <p class="video-stats">622k &#183; 3 days ago</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-3.avif">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-3.avif">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Face Massage With Olive Oil for Glowing Skin | 10 Steps</p>
-                    <p class="video-author">Love Yourself Fitness by Rita</p>
-                    <p class="video-stats">1m &#183; 3 yr ago</p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Face Massage With Olive Oil for Glowing Skin | 10 Steps</p>
+                        <p class="video-author">Love Yourself Fitness by Rita</p>
+                        <p class="video-stats">1m &#183; 3 yr ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-4.avif">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-4.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Introducing the new iPhone 18 Pro</p>
+                        <p class="video-author">Apple</p>
+                        <p class="video-stats">23m &#183; 2 wk ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-5.avif">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-5.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Tim Cook!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.3m &#183; 2 yr ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-6.avif">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-6.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">4 ways to fix your attention span - Shannon Odell</p>
+                        <p class="video-author">TED-Ed</p>
+                        <p class="video-stats">1.5m &#183; 5 days ago</p>
+                    </div>
                 </div>
             </div>
         </div>
-       
     </body>
 </html>
