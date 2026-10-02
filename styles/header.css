@@ -61,4 +61,32 @@ and spread the content evenly across the horizontal space*/
 }
 .right-section{
     width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.my-profile-pic{
+    height: 32px;
+    border-radius: 16px;
+}
+.create-button{
+    height: 40px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    color: #0f0f0f;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.upload-icon{
+    margin-right: 5px;
+}
+.create-button:hover{
+    background-color: rgb(230, 230, 230);
 }
