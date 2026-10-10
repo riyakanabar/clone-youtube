@@ -59,6 +59,37 @@ and spread the content evenly across the horizontal space*/
     margin-left: -1px;
     margin-right: 18px;
 }
+.search-button, .voice-search-button, .notifications-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.notifications-icon-container .tooltip{
+    position: absolute;
+    background-color: rgba(69, 68, 68,0.75);
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    bottom: -30px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+    opacity: 1;
+}
 .voice-search-button{
     height: 40px;
     width: 40px;
@@ -66,8 +97,11 @@ and spread the content evenly across the horizontal space*/
     border-radius: 20px;
     border: none;
 }
+.search-icon{
+    height: 25px;
+}
 .voice-search-icon{
-    margin-top: 4px;
+    height: 24px;
 }
 .right-section{
     width: 200px;

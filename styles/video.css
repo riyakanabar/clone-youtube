@@ -5,7 +5,9 @@
     column-gap: 16px;
     row-gap: 40px;
 }
-
+.video-preview:hover{
+    cursor: pointer;
+}
 .video-title{
     margin-top: 0px;
     font-size: 14px;
