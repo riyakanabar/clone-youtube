@@ -2,7 +2,9 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
+
 body{
+    /* This style below will be inhertied */
     margin: 0;
     padding-top: 80px;
     padding-bottom: 20px;

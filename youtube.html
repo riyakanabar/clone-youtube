@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/sidebar.css">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="left-section">
                 <img class="hamburger-menu" src="icons/hamburger-menu.svg">
                 <img src="icons/youtube-logo.svg">
@@ -22,6 +22,7 @@
                     <img src="icons/search.svg">
                     <div class="tooltip">Search</div>
                 </button>
+                <!-- Put position absolute inside position relative -->
                 <button class="voice-search-button">
                     <img class="voice-search-icon" src="icons/voice-search.svg">
                     <div class="tooltip">Search with your voice</div>
@@ -36,8 +37,8 @@
                 </div>
                 <img class="my-profile-pic" src="channel-pictures/mychannel.jpg">
             </div>
-        </div>
-        <div class="sidebar">
+        </header>
+        <nav class="sidebar">
             <div class="sidebar-link">
                 <img src="icons/home.svg">
                 <div>Home</div>
@@ -54,155 +55,157 @@
                 <img src="icons/you.svg">
                 <div>You</div>
             </div>
-        </div>
-        <div class="video-grid">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
-                    <div class="video-time">21:33</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+        </nav>
+        <main>
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
+                        <div class="video-time">21:33</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">These are the best AI Tools in 2026</p>
-                        <p class="video-author">Dan Martell</p>
-                        <p class="video-stats">205k &#183; 3 days ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
-                    <div class="video-time">1:27</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-2.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Introducing Meta VR Glasses | Spring 2027</p>
-                        <p class="video-author">Meta VR</p>
-                        <p class="video-stats">622k &#183; 3 days ago</p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">These are the best AI Tools in 2026</p>
+                            <p class="video-author">Dan Martell</p>
+                            <p class="video-stats">205k &#183; 3 days ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
+                        <div class="video-time">1:27</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-2.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Introducing Meta VR Glasses | Spring 2027</p>
+                            <p class="video-author">Meta VR</p>
+                            <p class="video-stats">622k &#183; 3 days ago</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-3.avif">
-                    <div class="video-time">3:11</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-3.avif">
+                        <div class="video-time">3:11</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">Face Massage With Olive Oil for Glowing Skin | 10 Steps</p>
-                        <p class="video-author">Love Yourself Fitness by Rita</p>
-                        <p class="video-stats">1m &#183; 3 yr ago</p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Face Massage With Olive Oil for Glowing Skin | 10 Steps</p>
+                            <p class="video-author">Love Yourself Fitness by Rita</p>
+                            <p class="video-stats">1m &#183; 3 yr ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-4.avif">
-                    <div class="video-time">2:58</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-4.jpg">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-4.avif">
+                        <div class="video-time">2:58</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">Introducing the new iPhone 18 Pro</p>
-                        <p class="video-author">Apple</p>
-                        <p class="video-stats">23m &#183; 2 wk ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-5.avif">
-                    <div class="video-time">16:33</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-5.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Talking Tech and AI with Tim Cook!</p>
-                        <p class="video-author">Marques Brownlee</p>
-                        <p class="video-stats">3.3m &#183; 2 yr ago</p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-4.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Introducing the new iPhone 18 Pro</p>
+                            <p class="video-author">Apple</p>
+                            <p class="video-stats">23m &#183; 2 wk ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-5.avif">
+                        <div class="video-time">16:33</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-5.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Talking Tech and AI with Tim Cook!</p>
+                            <p class="video-author">Marques Brownlee</p>
+                            <p class="video-stats">3.3m &#183; 2 yr ago</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-6.avif">
-                    <div class="video-time">5:26</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-6.jpg">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-6.avif">
+                        <div class="video-time">5:26</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">4 ways to fix your attention span - Shannon Odell</p>
-                        <p class="video-author">TED-Ed</p>
-                        <p class="video-stats">1.5m &#183; 5 days ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-7.avif">
-                    <div class="video-time">5:26</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-7.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Sia - Snowman [Official Video]</p>
-                        <p class="video-author">Sia</p>
-                        <p class="video-stats">425m &#183; 5 yr ago</p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-6.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">4 ways to fix your attention span - Shannon Odell</p>
+                            <p class="video-author">TED-Ed</p>
+                            <p class="video-stats">1.5m &#183; 5 days ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-8.avif">
-                    <div class="video-time">5:26</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-8.jpg">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-7.avif">
+                        <div class="video-time">5:26</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">OUTWORK EVERYONE.</p>
-                        <p class="video-author">SRJMotivation</p>
-                        <p class="video-stats">2.7m &#183; 1 yr ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-9.avif">
-                    <div class="video-time">5:26</div>
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-9.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">The One About Matthew Perry | Official Trailer | Netflix</p>
-                        <p class="video-author">Netflix India</p>
-                        <p class="video-stats">496k &#183; 11 days ago</p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-7.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Sia - Snowman [Official Video]</p>
+                            <p class="video-author">Sia</p>
+                            <p class="video-stats">425m &#183; 5 yr ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-8.avif">
+                        <div class="video-time">5:26</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-8.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">OUTWORK EVERYONE.</p>
+                            <p class="video-author">SRJMotivation</p>
+                            <p class="video-stats">2.7m &#183; 1 yr ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/thumbnail-9.avif">
+                        <div class="video-time">5:26</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/channel-9.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">The One About Matthew Perry | Official Trailer | Netflix</p>
+                            <p class="video-author">Netflix India</p>
+                            <p class="video-stats">496k &#183; 11 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
